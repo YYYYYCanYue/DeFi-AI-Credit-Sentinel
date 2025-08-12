@@ -3,6 +3,7 @@ from langchain.agents import tool, AgentExecutor, create_openai_tools_agent
 from langchain.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.messages import SystemMessage
 
+#依赖：langchain，langchain_openai
 
 @tool
 def is_professional(data):
@@ -55,5 +56,6 @@ agent_executor = AgentExecutor(
 
 response = (agent_executor.invoke({"input": f"用户数据:{data}请进行信用分判断，只需输出分数，不要做过多输出！不要做过多输出！不要做过多输出！"}))
 score = response['output']
+
 
 #score就是输出分数

@@ -1,13 +1,4 @@
-# Sample Hardhat Project
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
-
-Try running some of the following tasks:
-
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.js
-```
+# DeFi-AI-Credit-Sentinel
+核心概念：   用AI动态评估DeFi用户信用，并将评分结果通过NFT上链，实现链上信用可视化 解决的问题： 当前DeFi借贷需要超额抵押（如150%），通过AI分析用户链上行为生成信用评分，允许优质用户获得更低抵押率的贷款
+>>>>>>> 215510fe7db1c1294ca05377f22a8fb21c4bd471

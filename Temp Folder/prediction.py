@@ -1,6 +1,5 @@
 import pandas as pd
 import joblib
-import os
 
 feature_columns = [
     'eth_balance', 'total_txs', 'sent_txs', 'received_txs',

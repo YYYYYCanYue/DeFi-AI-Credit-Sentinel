@@ -13,9 +13,9 @@ MODEL_DIR = 'prediction_models'
 
 def predict_professional(user_features):
     """修复特征名称警告的预测函数"""
-    clf = joblib.load(os.path.join(MODEL_DIR, 'random_forest_classifier.pkl'))
-    imputer = joblib.load(os.path.join(MODEL_DIR, 'imputer.pkl'))
-    scaler = joblib.load(os.path.join(MODEL_DIR, 'scaler.pkl'))
+    clf = joblib.load('random_forest_classifier.pkl')
+    imputer = joblib.load('imputer.pkl')
+    scaler = joblib.load('scaler.pkl')
 
 
     if isinstance(user_features, dict):
